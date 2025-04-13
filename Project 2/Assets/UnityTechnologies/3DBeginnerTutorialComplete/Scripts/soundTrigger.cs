@@ -22,5 +22,12 @@ public class soundTrigger : MonoBehaviour
         }
     }
 
+/*   void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject == Player){
+            source.Stop();
+        }
+    }
+*/
 
 }
