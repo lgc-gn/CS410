@@ -1,0 +1,5 @@
+In your GitHub repo readme, describe the use of the dot product, linear interpolation, particle effect, and sound effect and how to make these happen in game. Also include the names of your team members and the contributions from each team member
+
+This is the Documentation for the Sound effect peice of the game, created by Sorin West.
+
+The Use of the new sound effect (woodcreek 1 and 2) is done at 4 points along the hallways before the dining room. The way That I was able to make them happen is by making an object in unity with the box collider, I gave the object an audio source of the sound effect I needed as well as a script that says when the player first collides with the object, the sound would play. 
