@@ -14,11 +14,11 @@
 
 ## Description of Additions
 
-**Audio** :   Added sound effects woodcreak 1 and 2. Triggered at multiple points within the hallways before the dining room. Done through a box collider with an attached script, *soundTrigger*, to detect when the player walks over the trigger.
+**Audio** :   Added sound effects *woodcreak 1* and *woodcreak 2*. Triggered at multiple points within the hallways before the dining room. Done through a box collider with an attached script, *soundTrigger*, to detect when the player walks over the trigger.
 
 **Linear Interpolation** : Within script, *LoS_Light*, linear intrepretation is used to determine the intensity of light sources. Using distance from the player and the lightsource.
 
-**Dot Product** : The dot product is used in script, *LoS*, to calculate whether or not the player is within an enemy's sight to trigger the gameover screen.
+**Dot Product** : The dot product is used in script, *LoS*, to calculate whether or not the player is within an enemy's sight to trigger the gameover screen. The difference of the target.position and player transform.position is normalized to determine detection range.
 
-**Particle Effects** : Added  a small dust particle occasionally triggered during the player's walkcycle animation.  Added a new particle effect simulating a trail that follows the ghost enemies as they float around. A new trigger around the ghosts dims the effect as the character gets near.
+**Particle Effects** : Added small dust particles when the character takes a step. Done by creating two animation event triggers within the walk cycle animation at the point where the player's foot touches the ground, and using the *FootstepEffect* script to play the correct particles for their corresponding events.
 

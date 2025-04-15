@@ -24,7 +24,7 @@ public class ProximityLightIntensity : MonoBehaviour
             // Lerp intensity based on how close the player is
             myLight.intensity = Mathf.Lerp(minIntensity, maxIntensity, t);
             myLight.color = Color.Lerp(farColor, closeColor, t);
-            Debug.Log($"Light intensity: {myLight.intensity}");
+            // Debug.Log($"Light intensity: {myLight.intensity}");
         }
     }
 }
